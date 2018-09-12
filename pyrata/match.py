@@ -28,14 +28,6 @@
 Resulting objects of a matching process
 """
 
-import logging
-from pprint import pprint, pformat
-import ply.yacc as yacc
-
-from pyrata.lexer import *
-from sympy import Symbol, symbols
-
-
 # """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 class Match(object):
   """ Object which stores the positions of all the groups of a given match delimited by a global start and end."""
@@ -58,7 +50,6 @@ class Match(object):
       value = kwargs['value']
     if 'groups' in kwargs.keys(): # MANDATORY
       self._groups = kwargs['groups']  
-      #logging.debug ('groups=', self._groups)
       #print ('Debug: Match__init__:(start={}, end={}, value={})'.format(startPosition, endPosition, value))
     else:  
       self._groups.append([value, start, end])
@@ -162,7 +153,6 @@ class Match(object):
     # return False  
 
   def __len__(self):
-    #logging.debug  ('groups=', self.groups)
     return len(self._groups) 
 
 # """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -177,7 +167,6 @@ class MatchesList(object):
 
   def append(self, match):
     self.matcheslist.append(match)
-    #logging.debug ('matcheslist=',self.matcheslist)
 
   def extend(self, another_matcheslist):
     self.matcheslist.extend(another_matcheslist)  

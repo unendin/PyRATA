@@ -213,8 +213,8 @@ if __name__ == '__main__':
 
 
   # ---------------------------------------------------------------------
-  logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='pyrata_re_py.log', level=logging.DEBUG)
-  # logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='pyrata_re_py.log', level=logging.INFO)
+  # logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='pyrata_re_py.log', level=# logging.DEBUG)
+  # # logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='pyrata_re_py.log', level=# logging.INFO)
   logger = logging.getLogger()
 
   # ---------------------------------------------------------------------

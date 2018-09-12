@@ -59,7 +59,7 @@ def measure_pattern_search():
 if __name__ == '__main__':
 
   #
-  #logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='benchmark.log', level=logging.INFO)
+  ## logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='benchmark.log', level=# logging.INFO)
   #logger = logging.getLogger()
   #logger.disabled = True
 
@@ -98,7 +98,7 @@ if __name__ == '__main__':
   # ----------------------------------------
   # The parse() function takes a string of text and returns a part-of-speech tagged Unicode string. Sentences in the output are separated by newline characters.
   # A parse tree stores a tagged string as a tree of nested objects that can be traversed to analyze the constituents in the text. The parsetree() function takes the same parameters as parse() and returns a Text object. 
-  #logging.info("pattern setup")
+  ## logging.info("pattern setup")
   #print ('pattern parsetree')
   text_tree = parsetree(text,
    tokenize = True,         # Split punctuation marks from words?
@@ -114,7 +114,7 @@ if __name__ == '__main__':
   #print ('timer declaration')
   pattern_search_time = Timer(measure_pattern_search)
 
-  #logging.info("pattern timeit")
+  ## logging.info("pattern timeit")
   #print ('timeit pattern')
   #print (pattern_search_time.timeit(number=iteration_number))
   runtimes = [pattern_search_time.timeit(number=1) for i in range (0, iteration_number)]

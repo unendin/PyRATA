@@ -880,9 +880,9 @@ The logging facility was partially interrupted in v0.4. The following may not wo
 
 __ For some performance reason, the debugging facility is not available on the pip version but on the github version. __ 
 
-PyRATA uses the `python logging facility <https://docs.python.org/3/howto/logging.html>`_. 
+PyRATA uses the `python logging facility <https://docs.python.org/3/howto/# logging.html>`_.
 
-.. https://docs.python.org/3/library/logging.html
+.. https://docs.python.org/3/library/# logging.html
 
 To **understand the process of a pyrata_re method either at the compilation or matching stage**, first import the logging module:
 
@@ -893,17 +893,17 @@ To **understand the process of a pyrata_re method either at the compilation or m
 
 Set the loggging filename, optionally the logging format of messages, and the logging level:   
 
-* ``logging.DEBUG`` For very detailed output for diagnostic purposes (10)
-* ``logging.INFO`` Report events that occur during normal operation of a program (e.g. for status monitoring or fault investigation) (20)
-* ``logging.WARNING`` Issue a warning regarding a particular runtime event (30)
+* ``# logging.DEBUG`` For very detailed output for diagnostic purposes (10)
+* ``# logging.INFO`` Report events that occur during normal operation of a program (e.g. for status monitoring or fault investigation) (20)
+* ``# logging.WARNING`` Issue a warning regarding a particular runtime event (30)
 
 DEBUG is more verbose than WARNING. WARNING will only report syntactic parsing problems.
 
 .. doctest ::
 
-    >>> logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='mypyrata.log', level=logging.INFO)
+    >>> # logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='mypyrata.log', level=# logging.INFO)
 
-.. logging.DEBUG, logging.INFO, logging.WARNING, logging.ERROR, logging.CRITICAL
+.. # logging.DEBUG, # logging.INFO, # logging.WARNING, # logging.ERROR, # logging.CRITICAL
 
 Now you can just run a compilation process
 
@@ -935,7 +935,7 @@ To dynamically change the log level without restarting the application, just typ
 
 .. doctest :: 
 
-    >>> logging.getLogger().setLevel(logging.DEBUG)
+    >>> logging.getLogger().setLevel(# logging.DEBUG)
 
 Log messages are incrementally appended at the end of the previous ones.
 

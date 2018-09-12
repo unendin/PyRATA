@@ -1,33 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-#
-# PyRATA
-#
-# Authors: 
-#         Nicolas Hernandez <nicolas.hernandez@gmail.com>
-#         Guan Gui 2014-08-10 13:20:03 https://www.guiguan.net/a-beautiful-linear-time-python-regex-matcher-via-nfa
-# URL: 
-#         https://github.com/nicolashernandez/PyRATA/
-#
-#
-# Copyright 2017 Nicolas Hernandez
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License. 
-#
-# """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 """ Description of the NFA elementary object namely as the state"""
-import logging
 
 class State(object):
     START_STATE = '#S'
@@ -58,15 +29,6 @@ class State(object):
         self.group_pile = group_pile            # list of group id currently open at this point
         self.id = State.class_counter           # unique id for this State
         State.class_counter += 1
-        logging.debug('State - create object - char={} id={} self={}'.format(char, self.id, self))
-        # print ('Debug: State type(self.char)={}'.format(self.char))
-        # print ('Debug: State type(self.in_states)={}'.format(self.in_states))
-        # print ('Debug: State type(self.symbolic_step_expression)={}'.format(self.symbolic_step_expression))
-        # print ('Debug: State type(self.single_constraint_tuple_list)={}'.format(self.single_constraint_tuple_list))
-        # print ('Debug: State type(self.single_constraint_variable_list)={}'.format(self.single_constraint_variable_list))
-        # print ('Debug: State type(self.group_pile)={}'.format(self.group_pile))
-        # print ('Debug: State type(self.id)={}'.format(self.id))
- 
 
 
     def is_start(self):

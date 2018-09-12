@@ -27,19 +27,12 @@
 
 """RE API to operate the data with a pattern"""
 
-import logging
-# logging.info() Report events that occur during normal operation of a program (e.g. for status monitoring or fault investigation)
-# logging.debug() for very detailed output for diagnostic purposes
-# logging.warning() Issue a warning regarding a particular runtime event
 
-import re
+import regex as re
 
-from pyrata.lexer import *
 import pyrata.match
 from pyrata.compiled_pattern import *
-import copy
 
-#from graph_tool.all import *
    
 
 # """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -49,7 +42,6 @@ def compile (pattern, **kwargs):    # lexicons = {},
   which can be used for matching using match(), search()... methods, described below.
   """
 
-  logging.info("re - compile")
 
   # build nfa  
   compiled_nfa = CompiledPattern()

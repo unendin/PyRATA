@@ -84,7 +84,7 @@ def test_noun_phrase(dictlist):
 if __name__ == '__main__':
 
 #
-#  logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='system-performance.log', level=logging.INFO)
+#  # logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='system-performance.log', level=# logging.INFO)
 #  logger = logging.getLogger()
 #  logger.disabled = True
 

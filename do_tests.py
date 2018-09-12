@@ -2918,8 +2918,8 @@ class PyrataReTest(unittest.TestCase):
 # """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if __name__ == '__main__':
 
-  logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='do_tests_py.log', level=logging.DEBUG)
-  # logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='do_tests_py.log', level=logging.INFO)
+  # logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='do_tests_py.log', level=# logging.DEBUG)
+  # # logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='do_tests_py.log', level=# logging.INFO)
   logger = logging.getLogger()
 
   # SET HERE True or False

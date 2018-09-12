@@ -979,7 +979,7 @@ def backslash(string):
 if __name__ == '__main__':
 
 #
-  logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='benchmark.log', level=logging.INFO)
+  # logging.basicConfig(format='%(levelname)s:\t%(message)s', filename='benchmark.log', level=# logging.INFO)
   logger = logging.getLogger()
   logger.disabled = True
 
